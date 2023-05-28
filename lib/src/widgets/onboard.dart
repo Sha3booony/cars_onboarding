@@ -207,16 +207,20 @@ class _OnBoard extends HookConsumerWidget {
                               fit: BoxFit.contain,
                             ),
                           ),
-                          Container(
-                            margin: const EdgeInsets.symmetric(horizontal: 12),
-                            child: Text(
-                              onBoardData[index].title,
-                              textAlign: TextAlign.center,
-                              style: titleStyles ??
-                                  const TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold,
-                                  ),
+                          Align(
+                            alignment: Alignment.centerLeft,
+                            child: Container(
+                              margin:
+                                  const EdgeInsets.symmetric(horizontal: 12),
+                              child: Text(
+                                onBoardData[index].title,
+                                textAlign: TextAlign.left,
+                                style: titleStyles ??
+                                    const TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                              ),
                             ),
                           ),
                           Container(
@@ -224,7 +228,7 @@ class _OnBoard extends HookConsumerWidget {
                             margin: const EdgeInsets.symmetric(horizontal: 12),
                             child: Text(
                               onBoardData[index].description,
-                              textAlign: TextAlign.center,
+                              textAlign: TextAlign.left,
                               style: descriptionStyles ??
                                   const TextStyle(
                                     fontSize: 14,
