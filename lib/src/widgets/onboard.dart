@@ -207,6 +207,14 @@ class _OnBoard extends HookConsumerWidget {
                               fit: BoxFit.contain,
                             ),
                           ),
+                          SizedBox(
+                            height: pageIndicatorHeight,
+                            child: PageIndicator(
+                              count: onBoardData.length,
+                              activePage: onBoardState.page,
+                              pageIndicatorStyle: pageIndicatorStyle,
+                            ),
+                          ),
                           Align(
                             alignment: Alignment.centerLeft,
                             child: Container(
@@ -241,14 +249,6 @@ class _OnBoard extends HookConsumerWidget {
                     );
                   },
                 )),
-          ),
-          SizedBox(
-            height: pageIndicatorHeight,
-            child: PageIndicator(
-              count: onBoardData.length,
-              activePage: onBoardState.page,
-              pageIndicatorStyle: pageIndicatorStyle,
-            ),
           ),
           Container(
             height: footerContentHeight,
