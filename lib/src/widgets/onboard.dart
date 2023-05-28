@@ -215,6 +215,7 @@ class _OnBoard extends HookConsumerWidget {
                               pageIndicatorStyle: pageIndicatorStyle,
                             ),
                           ),
+                          SizedBox(height: 24),
                           Align(
                             alignment: Alignment.centerLeft,
                             child: Container(
@@ -244,6 +245,7 @@ class _OnBoard extends HookConsumerWidget {
                                   ),
                             ),
                           ),
+                          SizedBox(height: 8),
                         ],
                       ),
                     );
